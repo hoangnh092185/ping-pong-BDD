@@ -1,6 +1,7 @@
 // ****Business logic****
 var numberArray = [];
 
+
 function numbersString(input){
   for(var i=1; i<=input; i++)
     if (i % 15 === 0){
@@ -22,10 +23,14 @@ function numbersString(input){
 $(document).ready(function(){
   $(".form-group").submit(function(event){
     event.preventDefault();
-    numberArray.length = 0;
+    var numberInput = 0;
     var numberInput = $("input").val().split();
     numbersString(numberInput);
 
-    $("#results").append(numberArray);
-  })
-})
+    var numberString = numberArray.toString( + " ");
+    console.log(numberArray);
+
+      $("#results").append(numberString);
+
+  });
+});
