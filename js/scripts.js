@@ -1,12 +1,19 @@
 // ****Business logic****
-function numberString(input){
-  for(var i= 0; i<=input;i++)
-    if (input === "3"){
-      alert("true");
-    }alert(false);
+var numberArray = [];
 
+function numbersString(input){
+  for(var i=1; i<=input; i++)
+    if (i % 15 === 0){
+      numberArray.push("Ping-Pong");
+    }else if (i % 5 === 0) {
+      numberArray.push("Pong");
+    }else if (i% 3 === 0){
+      numberArray.push("Ping");
+    }else {
+      numberArray.push(i);
+    }
+      console.log(numberArray);
 };
-debugger;
 
 
 
@@ -15,8 +22,9 @@ debugger;
 $(document).ready(function(){
   $(".form-group").submit(function(event){
     event.preventDefault();
-    var numberInput = $("input").val();
-    numberString(numberInput);
+    numberArray.length = 0;
+    var numberInput = $("input").val().split();
+    numbersString(numberInput);
 
     $("#results").append(numberArray);
   })
