@@ -2,8 +2,10 @@ body {
   background-color: lightblue;
 }
 div#headerStyle {
+  color: blue;
+  height: 400px;
   text-align: center;
-  background-color: lightgreen;
+  background-image: url('../img/pingpong.jpg');
 }
 div#gameStyle {
   margin-left: 50%;
