@@ -34,6 +34,6 @@ _Element used: html, css,Jquery, and bootrap._
 ### Link
 
 * https://github.com/hoangnh092185/ping-pong-BDD
-* https://github.com/hoangnh092185/portfolio/branches
+* https://github.com/hoangnh092185/ping-pong-BDD/branches
 
 Copyright &copy; 2016 by Nhat Hoang
