@@ -1,7 +1,6 @@
 // ****Business logic****
 var numberArray = [];
 
-
 function numbersString(input){
   for(var i=1; i<=input; i++)
     if (i % 15 === 0){
@@ -16,21 +15,21 @@ function numbersString(input){
       console.log(numberArray);
 };
 
-
-
-
 // ****User interface logic****
 $(document).ready(function(){
   $(".form-group").submit(function(event){
     event.preventDefault();
-    var numberInput = 0;
+
     var numberInput = $("input").val().split();
     numbersString(numberInput);
 
-    var numberString = numberArray.toString( + " ");
-    console.log(numberArray);
-
-      $("#results").append(numberString);
-
+    var numberString = numberArray.toString();
+    
+    function numberString(){
+      for (var i=0;i<=numberArray.length;i++){
+        $("ul#results").append("<li>" + numberArray(i) + "</li>");
+      }
+    }
+    $("ul#results").append("<li>" + numberArray + "</li>");
   });
 });

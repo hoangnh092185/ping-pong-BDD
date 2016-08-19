@@ -4,18 +4,50 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript"src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <title>Ping-Pong</title>
+    <title class="bg-success">Ping-Pong</title>
   </head>
   <body>
-    <div class="container">
-      <h3>Lets play number ping-pong!</h3>
+    <div class="page-header">
+      <div id="headerStyle" class="jumbotron">
+        <label><h1 >Ping-Pong</h1></label>
+      </div>
+    </div>
+    <div class="row">
 
-      <form class="form-group" action="index.html" method="post">
-        <input class="form-control" type="number" placeholder="Please enter a positive integer" name="name" min="0" required><hr>
-        <button type="submit" class="btn btn-success" name="button">Play!</button>
-      </form>
-      <li id="results"></li>
+    </div>
+    <div id="gamesStyle" class="container-fluid">
+      <div  class="">
+        <div class="row">
+          <div id="leftCol" class="col-md-3 sidenav">
+            <p>
+              <h3>About Ping Pong</h3><br>
+
+                <strong>Created by</strong><br>
+                Nhat Hoang
+                <strong>GitHub Username/URL:</strong><br>
+                hoangnh092185
+            </p>
+          </div>
+          <div id="rightCol" class="col-md-9">
+            <h3>Lets play numbers ping-pong!</h3>
+            <p>
+              Here are the rules:
+              <ul>
+                <li>Numbers divisible by 3 are replace by "Ping."</li>
+                <li>Numbers divisible by 5 are replace by "Pong"</li>
+                <li>Numbers divisible by 3 and 5 are replace by "Ping-Pong."</li>
+              </ul>
+            </p>
+            <form class="form-group" action="index.html" method="post">
+              <input class="form-control" type="number" placeholder="Please enter a positive integer" name="name" min="0" required><hr>
+              <button type="submit" class="btn btn-success" name="button">Play!</button>
+            </form>
+            <ul id="results"></ul>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

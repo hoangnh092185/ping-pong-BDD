@@ -1,0 +1,21 @@
+body {
+  background-color: lightblue;
+}
+div#headerStyle {
+  text-align: center;
+  background-color: lightgreen;
+}
+div#gameStyle {
+  margin-left: 50%;
+  margin-right: auto;
+}
+div#leftCol {
+  padding: 20px;
+  background-color: #f1f1f1;
+     height: 100%;
+}
+div#rightCol {
+  padding: 20px;
+  padding-right: 10px;
+  height: 100%;
+}
