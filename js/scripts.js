@@ -14,22 +14,18 @@ function numbersString(input){
     }
       console.log(numberArray);
 };
-
-// ****User interface logic****
+      // ****User Interface Logic****
 $(document).ready(function(){
   $(".form-group").submit(function(event){
     event.preventDefault();
+    $("ul#results").empty();
 
-    var numberInput = $("input").val().split();
+    var numberInput = $("input").val();
     numbersString(numberInput);
+    var numberResult;
 
-    var numberString = numberArray.toString();
-    
-    function numberString(){
-      for (var i=0;i<=numberArray.length;i++){
-        $("ul#results").append("<li>" + numberArray(i) + "</li>");
-      }
-    }
-    $("ul#results").append("<li>" + numberArray + "</li>");
+    for (var i = 0; i < numberArray.length; i++) {
+        $("ul#results").append("<li>" + numberArray[i] + "</li>");
+    };numberArray = [];
   });
 });

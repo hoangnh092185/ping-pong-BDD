@@ -8,6 +8,10 @@ Creates a user interface webpage and separates between UI logic and business log
 
 ### Specifications
 
+The output number will count up from 1 to the input number
+  input: 3
+  output: 1, 2, 3
+
 Numbers divisible by 3 are replace with "Ping"
   input: 6
   output: Ping
@@ -20,9 +24,11 @@ Numbers divisible by 3 and 5 are replace with "Ping-Pong"
   input: 15
   output: Ping-Pong
 
-Results will display each number with rules applied rules mentions above.
-  input: 15
-  output: 1,2,Ping,4,Pong,Ping,7,8,Ping,Pong,11,Ping,13,14,Ping-Pong
+Results will display in stack of each number with rules applied as mentions above.
+  input: 3
+  output: 1
+          2
+          Ping
 
 
 ### Setup
