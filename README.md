@@ -14,15 +14,15 @@ The output number will count up from 1 to the input number
 
 Numbers divisible by 3 are replace with "Ping"
   input: 6
-  output: Ping
+  output: 1, 2, Ping, 4, 5, Ping
 
 Numbers divisible by 5 are replace with "Pong"
   input: 10
-  output: Pong
+  output: 1,2,Ping,4,Pong,Ping,7,8,Ping,Pong
 
 Numbers divisible by 3 and 5 are replace with "Ping-Pong"
   input: 15
-  output: Ping-Pong
+  output: 1,2,Ping,4,Pong,Ping,7,8,Ping,Pong,11,Ping,13,14,Ping-Pong
 
 Results will display in stack of each number with rules applied as mentions above.
   input: 3
@@ -40,6 +40,6 @@ _Element used: html, css,Jquery, and bootrap._
 ### Link
 
 * https://github.com/hoangnh092185/ping-pong-BDD
-* https://github.com/hoangnh092185/ping-pong-BDD/branches
+* https://github.com/hoangnh092185/ping-pong-BDD/tree/gh-pages
 
 Copyright &copy; 2016 by Nhat Hoang

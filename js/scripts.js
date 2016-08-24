@@ -1,7 +1,7 @@
 // ****Business logic****
 var numberArray = [];
 
-function numbersString(input){
+function numberHolder(input){
   for(var i=1; i<=input; i++)
     if (i % 15 === 0){
       numberArray.push("Ping-Pong");
@@ -14,6 +14,7 @@ function numbersString(input){
     }
       console.log(numberArray);
 };
+
       // ****User Interface Logic****
 $(document).ready(function(){
   $(".form-group").submit(function(event){
@@ -21,11 +22,11 @@ $(document).ready(function(){
     $("ul#results").empty();
 
     var numberInput = $("input").val();
-    numbersString(numberInput);
-    var numberResult;
+    numberHolder(numberInput);
 
     for (var i = 0; i < numberArray.length; i++) {
         $("ul#results").append("<li>" + numberArray[i] + "</li>");
-    };numberArray = [];
+    }
+    numberArray = [];
   });
 });
